@@ -14,7 +14,10 @@ module.exports = function(grunt) {
             dev: {
                 script: 'lib/index.js',
                 options: {
-                    nodeArgs: ['--debug']
+                    nodeArgs: ['--debug'],
+                    env: {
+                        'NODE_ENV': 'dev'
+                    }
                 }
             }
         }
