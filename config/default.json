@@ -1,0 +1,11 @@
+{
+  "server": {
+    "listen": {
+      "port": 80
+    }
+  },
+  "author": {
+    "name": "Joshua Lowinski",
+    "email": "joshua_lowinski@163.com"
+  }
+}
