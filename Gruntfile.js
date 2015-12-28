@@ -4,10 +4,23 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         jshint: {
-            files: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js'],
+            files: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js', '!lib/public/static/**/*.js'],
             options: {
                 node: true,
-                esnext: true
+                esnext: true,
+                globals: {
+                    jQuery: true
+                }
+            }
+        },
+        bowercopy: {
+            bootstrap: {
+                files: {
+                    'lib/public/static/vendor/jquery': 'jquery/dist',
+                    'lib/public/static/vendor/bootstrap': 'bootstrap/dist',
+                    'lib/public/static/vendor/html5shiv': 'html5shiv/dist',
+                    'lib/public/static/vendor/respond': 'respond/dest'
+                }
             }
         },
         nodemon: {
@@ -24,9 +37,10 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-bowercopy');
     grunt.loadNpmTasks('grunt-nodemon');
 
-    grunt.registerTask('build', ['jshint']);
+    grunt.registerTask('build', ['jshint', 'bowercopy']);
     grunt.registerTask('run-dev', ['build', 'nodemon:dev']);
 
 };
