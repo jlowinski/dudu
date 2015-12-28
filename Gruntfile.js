@@ -19,7 +19,8 @@ module.exports = function(grunt) {
                     'lib/public/static/vendor/jquery': 'jquery/dist',
                     'lib/public/static/vendor/bootstrap': 'bootstrap/dist',
                     'lib/public/static/vendor/html5shiv': 'html5shiv/dist',
-                    'lib/public/static/vendor/respond': 'respond/dest'
+                    'lib/public/static/vendor/respond': 'respond/dest',
+                    'lib/public/static/vendor/bootstrap-validator': 'bootstrap-validator/dist'
                 }
             }
         },

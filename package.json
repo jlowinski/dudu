@@ -8,6 +8,8 @@
     "grunt-nodemon": "^0.4.1"
   },
   "dependencies": {
+    "co": "^4.6.0",
+    "co-mongo": "0.0.2",
     "config": "^1.17.1",
     "koa": "^1.1.2",
     "koa-bodyparser": "^2.0.1",
