@@ -9,6 +9,12 @@
       "maxAge": 31536000
     }
   },
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "name": "dudu",
+    "pool": 16
+  },
   "author": {
     "name": "Joshua Lowinski",
     "email": "joshua_lowinski@163.com"

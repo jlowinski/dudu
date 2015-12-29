@@ -5,6 +5,7 @@
     "html5shiv": "~3.7.3",
     "respond": "~1.4.2",
     "jquery": "~2.1.4",
-    "bootstrap-validator": "~0.9.0"
+    "bootstrap-validator": "~0.9.0",
+    "tb.jquery.url-params": "~1.0.1"
   }
 }
