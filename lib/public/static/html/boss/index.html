@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BOSS后端</title>
+
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="/static/vendor/html5shiv/html5shiv.min.js"></script>
+    <script src="/static/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        thead td {
+            font-weight: bold;
+        }
+        .name-col {
+            font-weight: bold;
+        }
+        .desc-col {
+            font-style: italic;
+        }
+    </style>
+
+</head>
+<body class="container">
+<h3>BOSS后端</h3>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="/static/html/boss/index.html">用例介绍</a></li>
+    <li role="presentation"><a href="/boss/business">业务管理</a></li>
+    <li role="presentation"><a href="#">关系户管理</a></li>
+</ul>
+<table class="table table-striped table-hover">
+    <thead>
+    <tr>
+        <td>用例</td>
+        <td>介绍</td>
+    </tr>
+    </thead>
+    <tr>
+        <td class="name-col">业务管理</td>
+        <td class="desc-col">创建、删除车主可以直接委托的业务。</td>
+    </tr>
+    <tr>
+        <td class="name-col">关系户管理</td>
+        <td class="desc-col">绑定、修改、解绑关系户。</td>
+    </tr>
+</table>
+<script src="/static/vendor/jquery/jquery.min.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
